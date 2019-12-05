@@ -1,27 +1,41 @@
 <resources>
-    <string name="app_name">Custom ListView ND</string>
+    <string name="app_name">P_kids</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <!-- Navigation Drawer -->
-    <string name="communicate">Communicate</string>
-    <string name="share">Share</string>
-    <string name="send">Send</string>
-    <string name="tools">Tools</string>
-    <string name="slideshow">Slideshow</string>
-    <string name="gallery">Gallery</string>
-    <string name="imp">Import</string>
-    <string name="title_activity_menu">menu</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <!--SingIn-->
+    <string name="messageerreur" />
+    <string name="messagesucces" />
+    <!-- menu -->
+    <string name="Dashboard">Dashboard</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Profile">Profile</string>
+    <string name="Activités">Activités</string>
+    <!-- ListView -->
+    <string name="image_description">Image d\'item</string>
+    <string name="text_description">Office 365</string>
+    <string name="word">Word</string>
+    <string name="word_description">Editeur de texte</string>
+    <string name="excel">Excel</string>
+    <string name="excel_description">Tableur</string>
+    <string name="powerpoint">PowerPoint</string>
+    <string name="powerpoint_description">Logiciel de présentation</string>
+    <string name="outlook">Outlook</string>
+    <string name="outlook_description">Client de courrier électronique</string>
+    <string name="adb_start_message">Vous avez choisi</string>
+    <string name="adb_title">Choix du Produit</string>
+    <string name="adb_btn_ok">OK</string>
+    <!--champs Inscrire-->
+    <string name="Nom">Nom</string>
+    <string name="Adresse_Email">Adresse_Email</string>
+    <string name="Prenom">Prenom</string>
+    <string name="Inscrire">S\'Inscrire</string>
+    <string name="Mot_de_passe">Mot_de_passe</string>
+    <string name="Identifier">S\'identifier</string>
 
 
 </resources>
+

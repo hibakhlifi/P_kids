@@ -71,8 +71,7 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
         });
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         mAuth = FirebaseAuth.getInstance();
-        nom=findViewById(R.id.Nom);
-        prenom=findViewById(R.id.Prénom);
+
          mail = findViewById(R.id.Email);
          pass = findViewById(R.id.Mot_de_passe);
 
@@ -97,8 +96,6 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
 
     public void test()
     {
-        String noml=nom.getText().toString();
-        String prenoml=prenom.getText().toString();
         String login = mail.getText().toString();
         String motdepasse=pass.getText().toString();
 

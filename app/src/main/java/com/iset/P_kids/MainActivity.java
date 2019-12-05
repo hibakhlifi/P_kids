@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         messagesucces = getString(R.string.messagesucces);
         //instance du firebase
         firebaseAuth = FirebaseAuth.getInstance();
-        //gérer le click sur le boutton SignIn
+        //gérer le click sur le button SignIn
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,17 +51,17 @@ public class MainActivity extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                //si l' utilisateur est exicte et l'email et le mot de passe
-                                // sont correctes alors  l'nterface de liste des hotels s'ouvre
+                                //si l' utilisateur est existe et l'email et le mot de passe
+                                // sont correctes alors  l'nterface de dashboard sera ouverte
                                 if (task.isSuccessful()) {
                                     Intent newActivity = new Intent(MainActivity.this, MenuActivity.class);
                                     startActivity(newActivity);
-                                    //aussi l'affichage d'un toast indique le succesde connction
+                                    //l'affichage d'un toast indique le succes de connection
                                     Toast.makeText(MainActivity.this, "Authentication suuc.",
                                             Toast.LENGTH_SHORT).show();
 
                                 }
-                                //si il y'a une erreur alors un Toast etre affiché
+                                //si il y'a une erreur alors un Toast sera etre affiché
                                 else {
                                     Toast.makeText(MainActivity.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();

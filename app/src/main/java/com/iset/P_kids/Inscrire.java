@@ -34,6 +34,7 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inscrire);
+        //récupération des données saisi dans les champs
         Nom = findViewById(R.id.Nom);
         Prénom = findViewById(R.id.Prénom);
         Email = findViewById(R.id.Email);
@@ -51,6 +52,7 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
                 user.setNom(nom);
                 user.setPrénom(prenom);
                 user.setEmail(email);
+                //instance de classe ApiUtil pour créer un nouveau utilisateur
                 ApiUtil.getServiceClass().addUser(user).enqueue(new Callback<User>() {
                     @Override
                     public void onResponse(Call<User> call, Response<User> response) {
@@ -69,9 +71,10 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
 
             }
         });
+        //Instance de firebase
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         mAuth = FirebaseAuth.getInstance();
-
+//récupération des informations saisie dans les champs
          mail = findViewById(R.id.Email);
          pass = findViewById(R.id.Mot_de_passe);
 
@@ -95,6 +98,7 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
     }
 
     public void test()
+    //un test sur la création d'un nouveau utilisateur dans la base de données
     {
         String login = mail.getText().toString();
         String motdepasse=pass.getText().toString();

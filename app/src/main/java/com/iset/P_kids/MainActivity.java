@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.motdepasse);
 
         signin = findViewById(R.id.button1);
-        //récupérztion du message  existe dans le fichier string
+        //récupération du message  existe dans le fichier string
         messageerreur = getString(R.string.messageerreur);
         messagesucces = getString(R.string.messagesucces);
         //instance du firebase
         firebaseAuth = FirebaseAuth.getInstance();
-        //gérer le click sur le bouttoon signin
+        //gérer le click sur le boutton SignIn
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

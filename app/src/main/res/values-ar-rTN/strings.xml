@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Adresse_Email">البريد الإلكتروني</string>
+    <string name="Activités">الأنشطة</string>
+    <string name="Bienvenue">مرحبا بكم</string>
+    <string name="Envoyer">إرسال</string>
+</resources>

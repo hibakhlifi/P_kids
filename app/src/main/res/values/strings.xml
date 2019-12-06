@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">P_kids</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -14,7 +14,7 @@
     <string name="Notifications">Notifications</string>
     <string name="Profile">Profile</string>
     <string name="Activités">Activités</string>
-    <string name="Ajouter_Enfant">Ajouter Enfant</string>
+    <string name="Ajouter_Enfant">+ Ajouter Enfant</string>
 
     <!--champs Inscrire-->
     <string name="Nom">Nom</string>
@@ -24,6 +24,11 @@
     <string name="Mot_de_passe">Mot_de_passe</string>
     <string name="Identifier">S\'identifier</string>
 
+    <string name="langue">Langue</string>
+    <string name="Bienvenue">Bienvenue</string>
+    <string name="Envoyer">Envoyer</string>
 
+    <!--Forget password-->
+    <string name="oublier">Mot de passe oublier ?</string>
 </resources>
 

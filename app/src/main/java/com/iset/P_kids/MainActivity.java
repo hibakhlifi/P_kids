@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        //passage a l'interface de création de compte
         findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+//passage au interface de mot de passe oublier
+        findViewById(R.id.oublier).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Forget_password.class);
+                startActivity(intent);
+            }
+        });
+
+
         email = findViewById(R.id.email);
         password = findViewById(R.id.motdepasse);
 
@@ -71,7 +83,11 @@ public class MainActivity extends AppCompatActivity {
 
                         });
 
+
             }
         });
 
-    }}
+
+    }
+
+}

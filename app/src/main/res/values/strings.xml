@@ -30,5 +30,15 @@
 
     <!--Forget password-->
     <string name="oublier">Mot de passe oublier ?</string>
+    <string name="afficher">Afficher</string>
+    <string name="paragraphe">Veuillez remplir les information ci_dessus,len informations de votre enfant sera sauvegarder</string>
+    <string name="age">age</string>
+    <string name="inserer">Insérer</string>
+
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Indonesian</item>
+        <item>Spanish</item>
+    </string-array>
 </resources>
 

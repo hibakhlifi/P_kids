@@ -3,4 +3,10 @@
     <string name="app_name">P_kids</string>
     <string name="Envoyer">Send</string>
     <string name="Bienvenue">Welcome</string>
+    <string name="paragraphe">Paragraphe</string>
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Indonesian</item>
+        <item>Spanish</item>
+    </string-array>
 </resources>

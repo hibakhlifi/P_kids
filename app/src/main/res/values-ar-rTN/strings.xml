@@ -4,4 +4,10 @@
     <string name="Activités">الأنشطة</string>
     <string name="Bienvenue">مرحبا بكم</string>
     <string name="Envoyer">إرسال</string>
+    <string name="paragraphe">Paragraphe</string>
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Indonesian</item>
+        <item>Spanish</item>
+    </string-array>
 </resources>

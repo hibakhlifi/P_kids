@@ -1,59 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Test">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Inscrire">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:layout_gravity="center"
+        android:text="@string/paragraphe"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp" />
+
 
     <EditText
-        android:id="@+id/champ"
+        android:id="@+id/inserer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="173dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginRight="131dp"
-        android:layout_marginBottom="74dp"
-        android:ems="10"
-        android:hint="ecrire..."
+        android:ems="16"
+        android:layout_gravity="center"
+        android:hint="@string/Nom"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btn1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp" />
 
-    <Button
-        android:id="@+id/btn1"
+
+    <EditText
+        android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginEnd="190dp"
-        android:layout_marginRight="190dp"
-        android:layout_marginBottom="55dp"
-        android:text="insérer"
-        app:layout_constraintBottom_toTopOf="@+id/btn2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/champ" />
+        android:ems="16"
+        android:layout_gravity="center"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@id/inserer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="190dp"
-        android:layout_marginRight="190dp"
-        android:layout_marginBottom="251dp"
-        android:text="afficher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+        android:ems="16"
+        android:text="@string/inserer"
+        android:textColor="#FFFF"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:layout_marginTop="55dp" />
+    <Button
+        android:id="@+id/afficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:text="@string/afficher"
+        android:textColor="#FFFF"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:layout_marginTop="55dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

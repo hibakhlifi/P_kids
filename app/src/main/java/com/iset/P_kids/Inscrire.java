@@ -3,6 +3,7 @@ package com.iset.P_kids;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,13 +29,17 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
     private FirebaseAuth mAuth;
     EditText login;
     EditText  motdepasse;
+    Button inscrire;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inscrire);
+
+
         //récupération des données saisi dans les champs
+
         Nom = findViewById(R.id.Nom);
         Prénom = findViewById(R.id.Prénom);
         Email = findViewById(R.id.Email);
@@ -42,6 +47,7 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
         findViewById(R.id.Inscrire).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 String nom = Nom.getText().toString();
                 String prenom = Prénom.getText().toString();
                 String email = Email.getText().toString();
@@ -81,7 +87,10 @@ EditText Nom,Prénom,Email,Mot_de_passe,mail,pass,nom,prenom;
         findViewById(R.id.Inscrire).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 test();
+
+
 
             }
         });

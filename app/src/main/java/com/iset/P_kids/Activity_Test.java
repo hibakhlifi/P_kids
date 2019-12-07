@@ -17,18 +17,19 @@ import com.google.firebase.database.ValueEventListener;
 public class Activity_Test extends AppCompatActivity {
     private FirebaseDatabase dataBase;
     private DatabaseReference myRef;
-    EditText champ1;
+    EditText champ1, champ2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__test);
 
-        champ1 = findViewById(R.id.champ);
+        champ1 = findViewById(R.id.inserer);
+        champ2 = findViewById(R.id.age);
 
         dataBase = FirebaseDatabase.getInstance();
         myRef = dataBase.getReference("message");
-        findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.inserer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -38,7 +39,7 @@ public class Activity_Test extends AppCompatActivity {
 
             }
         });
-        findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.afficher).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String TAG = "test";
@@ -48,7 +49,7 @@ public class Activity_Test extends AppCompatActivity {
                         // This method is called once with the initial value and again
                         // whenever data at this location is updated.
                         String value = dataSnapshot.getValue(String.class);
-                        Log.d(TAG, "Value is: " + value);
+                        Log.d(TAG, "Value is:" + value);
                         Toast.makeText(Activity_Test.this, value, Toast.LENGTH_LONG).show();
 
                     }

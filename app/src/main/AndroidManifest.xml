@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity android:name=".Activity_Test"></activity>
-        <activity android:name=".Forget_password" />
+        <activity android:name=".Forget_password" />w
         <activity
             android:name=".MenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
